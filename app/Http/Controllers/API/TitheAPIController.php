@@ -40,9 +40,10 @@ class TitheAPIController extends AppBaseController
 
         try {
             $validator = Validator::make($request->all(), [
+                'user_id' => 'required|integer',
                 'member_id' => 'required|integer',
                 'amount_paid' => 'required|integer',
-                'month' => 'integer',
+                
             ]);
             if ($validator->fails()) {
                 return $this->errorResponse($validator->errors(), APIActions::VALIDATION);
@@ -82,9 +83,10 @@ class TitheAPIController extends AppBaseController
             }
 
             $validator = Validator::make($request->all(), [
+                'user_id' => 'required|integer',
                 'member_id' => 'required|integer',
                 'amount_paid' => 'required|integer',
-                'month' => 'integer',
+                
             ]);
 
             if ($validator->fails()) {
