@@ -2,10 +2,11 @@
 
 namespace App\Repositories;
 
+use App\Interfaces\DuesPaymentInterface;
 use App\Models\DuesPayment;
 use Illuminate\Database\Eloquent\Collection;
 
-class DuesPaymentRepository
+class DuesPaymentRepository implements DuesPaymentInterface
 {
     private DuesPayment $dues_payment;
     /**

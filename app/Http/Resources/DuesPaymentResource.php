@@ -15,10 +15,12 @@ class DuesPaymentResource extends JsonResource
     public function toArray(Request $request): array
     {
         return [
-            "id"=> $this->id,
-            "user_id"=> $this->user_id,
-            "member_id"=> $this->member_id,
-            "description"=> $this->description,
+            'id' => $this->id,
+            'user_id' => $this->user_id,
+            'member_id' => $this->member_id,
+            'amount_paid' => $this->amount_paid,
+            'balance' => $this->balance,
+            
         ];
     }
 }
