@@ -59,4 +59,6 @@ class TitheRepository implements TitheInterface
         $tithe->delete();
         return $tithe;
     }
+
+ 
 }

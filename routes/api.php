@@ -3,7 +3,9 @@
 use App\Http\Controllers\API\AuthAPIController;
 use App\Http\Controllers\API\ChurchAPIController;
 use App\Http\Controllers\API\DuesAPIController;
+use App\Http\Controllers\API\DuesPaymentAPIController;
 use App\Http\Controllers\API\MemberAPIController;
+use App\Http\Controllers\API\TitheAPIController;
 use App\Http\Controllers\API\UserAPIController;
 use Illuminate\Support\Facades\Route;
 
@@ -20,6 +22,8 @@ Route::group([], function () {
     Route::resource('churches', ChurchAPIController::class);
     Route::resource('members', MemberAPIController::class);
     Route::resource('dues', DuesAPIController::class);
+    Route::resource('dues_payments', DuesPaymentAPIController::class);
+    Route::resource('tithes', TitheAPIController::class);
 
 
 

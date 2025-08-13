@@ -13,8 +13,9 @@ class Tithe extends Model
     public $table = 'tithes';
 
     protected $fillable = [
+        'user_id',
         'member_id',
         'amount_paid',
-        'month',
+        
     ];
 }

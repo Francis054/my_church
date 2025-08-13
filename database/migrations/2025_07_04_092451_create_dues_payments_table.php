@@ -14,8 +14,8 @@ return new class extends Migration
         Schema::create('dues_payments', function (Blueprint $table) {
             $table->id();
             $table->foreignId('user_id')->constrained();
-            $table->foreignId('member_id')->constrained()->cascadeOnDelete();
-            $table->foreignId('dues_id')->constrained()->cascadeOnDelete();
+            $table->foreignId('member_id')->constrained();
+            $table->foreignId('dues_id')->constrained();
             $table->decimal('amount_paid');
             $table->decimal('balance');
             $table->timestamps();

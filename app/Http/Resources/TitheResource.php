@@ -15,9 +15,10 @@ class TitheResource extends JsonResource
     public function toArray(Request $request): array
     {
         return [
-            "member_id"=> $this->member_id,
-            "amount_paid"=> $this->amount_paid,
-            "month"=> $this->month,
+            "id"=> $this->id,
+            'member_id' => $this->member_id,
+            'amount_paid' => $this->amount_paid,
+
         ];
     }
 }

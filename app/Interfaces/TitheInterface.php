@@ -37,4 +37,12 @@ interface TitheInterface
      * @param int $id
      */
     public function delete(int $id): Tithe;
+
+    /**
+     * The function get member assigned to a tithe
+     * @param int $member_id
+     *
+     */
+
 }
+
